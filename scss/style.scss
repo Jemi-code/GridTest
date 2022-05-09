@@ -1,0 +1,134 @@
+@import "custom";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $myFont;
+    font-size: $mySize;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: $mySize - 2;
+    font-weight: 600;
+    position: relative;
+    left: 1.5rem;
+}
+
+h2{
+    font-size: $mySize - 4;
+    font-weight: 500;
+    position: relative;
+    left: 1.5rem;
+}
+
+p{
+    display: inline-block;
+}
+
+.bold-p{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.normal-p{
+    font-weight: 500;
+    font-size: $mySize;
+}
+
+
+.first{
+    grid-area: daniel;
+    box-shadow: $box-shadow-lg;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 80% top;
+}
+
+.second{
+    grid-area: john;
+    box-shadow: $box-shadow-lg;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.third{
+    grid-area: jean;
+    box-shadow: $box-shadow-lg;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.fourth{
+    grid-area: patrick;
+    box-shadow: $box-shadow-lg;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.fifth{
+    grid-area: kira;
+    box-shadow: $box-shadow-lg;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "daniel daniel john kira"
+    "jean patrick patrick kira";
+    gap: 2rem;
+    width: 90%;
+    margin: 8rem 0;
+}
+
+.avatarImg{
+    width: 30px;
+}
+
+@include media-breakpoint-down(md) {
+    .wrapper{
+        display: grid;
+        grid-template-areas: 
+        "daniel"
+        "daniel"
+        "john"
+        "jean"
+        "patrick"
+        "patrick"
+        "kira";
+        gap: 2rem;
+        width: 90%;
+        margin: 8rem 0;
+    }
+}

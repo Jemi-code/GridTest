@@ -1,0 +1,12 @@
+$secondary: hsl(263, 55%, 52%);
+$info: hsl(217, 19%, 35%);
+$dark: hsl(219, 29%, 14%);
+$light: hsl(0, 0%, 100%);
+$lightgray: hsl(0, 0%, 81%);
+$primary: hsl(210, 46%, 95%);
+$myFont: 'Barlow Semi Condensed', sans-serif;
+$mySize: 13px;
+$black: black;
+$box-shadow-lg: 0 1rem 2rem rgba($black, .375);
+
+@import "../bootstrap/scss/bootstrap.scss";
